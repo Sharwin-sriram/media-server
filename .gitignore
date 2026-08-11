@@ -1,1 +1,14 @@
-node_modules
+# Folders
+node_modules/
+
+# Files
+*.env
+
+# logs
+*.md
+*.docx
+*.pdf
+*.ppt
+
+# Editor
+.vscode/
