@@ -7,5 +7,5 @@ const PORT: number = Number(process.env.PORT) || 3000;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server started in port ${PORT}`);
   console.log(`localhost: http://localhost:${PORT}`);
-  console.log(`Network: ${IPV4}`);
+  console.log(`Network: http://${IPV4}:${PORT}`);
 });
