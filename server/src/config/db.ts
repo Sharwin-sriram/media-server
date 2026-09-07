@@ -17,3 +17,5 @@ const dialect = new SqliteDialect({
 export const db = new Kysely<DataBase>({
   dialect: dialect,
 });
+
+// Database is boring
