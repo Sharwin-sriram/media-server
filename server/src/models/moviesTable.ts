@@ -1,4 +1,20 @@
-import type { Generated, JSONColumnType } from "kysely";
+import type {
+  Generated,
+  Insertable,
+  JSONColumnType,
+  Selectable,
+  Updateable,
+} from "kysely";
 
+export interface movie_table {
+  id: Generated<String>;
+  name: String;
+  metadata: JSONColumnType<{
+    duration: String;
+    release_year: String;
+  }>;
+}
 
-// export type 
+export type movies = Selectable<movie_table>;
+export type newMovie = Insertable<movie_table>;
+export type updateMovie = Updateable<movie_table>;

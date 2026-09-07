@@ -12,7 +12,6 @@ export interface library_table {
   path: String;
   metadata: JSONColumnType<{
     duration: String;
-    release_year: String;
   }>;
 }
 
