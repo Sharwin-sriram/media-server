@@ -9,6 +9,8 @@ import type {
 export interface movie_table {
   id: Generated<String>;
   name: String;
+  path: String;
+  icon_path: String;
   metadata: JSONColumnType<{
     duration: String;
     release_year: String;
