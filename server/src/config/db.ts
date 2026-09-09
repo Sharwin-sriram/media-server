@@ -1,12 +1,13 @@
-import SQLite from "better-sqlite3";
 import { Kysely, SqliteDialect } from "kysely";
 import type { DataBase } from "./schema.ts";
+import SQLite from "better-sqlite3";
+import { DB } from "./config.ts";
 
-const dbPath = process.env.DB;
+function createDB() {
+  
+}
 
-if (!dbPath) throw new Error("DB variable not set");
-
-const sqlite = new SQLite(dbPath, {
+const sqlite = new SQLite(DB, {
   verbose: console.log,
 });
 

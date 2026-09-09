@@ -1,9 +1,10 @@
 import "dotenv/config";
 import express from "express";
 import { IPV4 } from "#config/network.ts";
+import { PORT } from "#config/config.ts";
+import { db } from "#config/db.ts";
 
 const app = express();
-const PORT: number = Number(process.env.PORT) || 3000;
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server started`);
