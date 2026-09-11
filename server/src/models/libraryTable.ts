@@ -7,11 +7,11 @@ import type {
 } from "kysely";
 
 export interface library_table {
-  id: Generated<String>;
-  name: String;
-  path: String;
+  id: Generated<string>;
+  name: string;
+  path: string;
   metadata: JSONColumnType<{
-    duration: String;
+    duration: string;
   }>;
 }
 

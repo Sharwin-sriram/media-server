@@ -7,14 +7,14 @@ import type {
 } from "kysely";
 
 export interface tv_shows_table {
-  id: Generated<String>;
-  name: String;
-  path: String;
-  icon_path: String;
+  id: Generated<string>;
+  name: string;
+  path: string;
+  icon_path: string;
   metadata: JSONColumnType<{
-    duration: String;
-    season: String;
-    episode: String;
+    duration: string;
+    season: string;
+    episode: string;
   }>;
 }
 

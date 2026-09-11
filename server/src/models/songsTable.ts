@@ -7,17 +7,17 @@ import type {
 } from "kysely";
 
 export interface song_table {
-  id: Generated<String>;
-  name: String;
-  path: String;
-  icon_path: String;
+  id: Generated<string>;
+  name: string;
+  path: string;
+  icon_path: string;
   metadata: JSONColumnType<{
-    duration: String;
-    artist: String;
-    album: String;
-    format: String;
+    duration: string;
+    artist: string;
+    album: string;
+    format: string;
     bitrate: number;
-    length: String;
+    length: string;
   }>;
 }
 

@@ -7,13 +7,13 @@ import type {
 } from "kysely";
 
 export interface movie_table {
-  id: Generated<String>;
-  name: String;
-  path: String;
-  icon_path: String;
+  id: Generated<string>;
+  name: string;
+  path: string;
+  icon_path: string;
   metadata: JSONColumnType<{
-    duration: String;
-    release_year: String;
+    duration: string;
+    release_year: string;
   }>;
 }
 
