@@ -7,7 +7,7 @@ import type {
 } from "kysely";
 
 export interface library_table {
-  id: Generated<string>;
+  id: string;
   name: string;
   path: string;
   metadata: JSONColumnType<{

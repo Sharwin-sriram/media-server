@@ -7,7 +7,7 @@ import type {
 } from "kysely";
 
 export interface movie_table {
-  id: Generated<string>;
+  id: string;
   name: string;
   path: string;
   icon_path: string;

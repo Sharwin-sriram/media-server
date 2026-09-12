@@ -1,7 +1,6 @@
 import type { Generated } from "kysely";
 
 export interface user_watch_status {
-  id: Generated<String>;
-  name: String;
-  
+  id: string;
+  name: string;
 }

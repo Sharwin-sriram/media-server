@@ -7,7 +7,7 @@ import type {
 } from "kysely";
 
 export interface song_table {
-  id: Generated<string>;
+  id: string;
   name: string;
   path: string;
   icon_path: string;
