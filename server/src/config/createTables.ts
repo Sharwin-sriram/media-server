@@ -1,4 +1,3 @@
-import type { Kysely } from "kysely";
 import { db } from "./db.ts";
 
 export async function createTables() {
@@ -37,7 +36,8 @@ export async function createTables() {
     .addColumn("metadata", "text", (cb) => cb.notNull())
     .execute();
 }
+
 // TODO: Implement fully
 export async function nextId() {
-  
+
 }
